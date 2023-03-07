@@ -40,6 +40,7 @@ import { ViewProps, ViewState } from "../types/types";
                             onChange={handleChange}
                                />
                                 <input type = 'submit'value = 'Enviar'/>
+                                <span>{formSent?'Formulario enviado com sucesso!':''} </span>
                        </form>
                            
                         </div>

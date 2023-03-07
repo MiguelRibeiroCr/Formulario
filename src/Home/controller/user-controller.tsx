@@ -22,7 +22,7 @@ class UserController extends React.Component<Props, ControllerState> {
     postUserData(userModel)
     .then(response => {
       console.log(response);
-      if(response.status == 201){
+      if(response.status === 201){
         this.setState({name:this.state.name, email:this.state.email, message:this.state.message, formSent: true})
       }
     });
